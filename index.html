@@ -39,8 +39,8 @@
             <div class="col-sm-offset-2 col-sm-4">
                 <div class="card rounded border border-info" id="randNumCard">
                     <div class="card-body text-center font-weight-bold">
-                        <div class="card-body text-center font-weight-bold" id="rand-num-val">
-                            <h1>12</h1>
+                        <div class="card-body text-center font-weight-bold">
+                            <h1 id="rand-num-val"></h1>
                         </div>
                     </div>
                 </div>
@@ -49,8 +49,8 @@
                 <div class="card rounded border border-info" id="winLosCard">
                     <div class="card-body text-center font-weight-bold">
                         <ul class="list-group list-group-flush">
-                            <li class="list-group-item">Wins:</li>
-                            <li class="list-group-item">Losses:</li>
+                            <li class="list-group-item" id="num-of-wins">Wins: 0</li>
+                            <li class="list-group-item" id="num-of-losses">Losses: 0</li>
                         </ul>
                     </div>
                 </div>
@@ -58,8 +58,8 @@
             <div class="col-sm-offset-2 col-sm-4">
                 <div class="card rounded border border-info" id="scoreCard">
                     <div class="card-body text-center font-weight-bold">
-                        <div class="card-body text-center font-weight-bold" id="player-score">
-                            <h1>15</h1>
+                        <div class="card-body text-center font-weight-bold">
+                            <h1 id="player-score">0</h1>
                         </div>
                     </div>
                 </div>
@@ -69,23 +69,45 @@
         <br>
         <br>
         <div class="row m-2 p-2">
-
-
             <div class="col-sm-offset-2 col-sm-3">
-                    <img width="200" height="200" src="./assets/images/crystals/crystal-1.jpg" alt="Crystal-1" class="img-thumbnail rounded mx-auto d-block border border-info">
+                    <img 
+                            width="200" 
+                            height="200" 
+                            src="./assets/images/crystals/crystal-1.jpg" 
+                            alt="Crystal-1" 
+                            rand-val=""
+                            class="img-thumbnail rounded mx-auto d-block border border-info crystal-image">
             </div>
             <div class="col-sm-offset-2 col-sm-3">
-                    <img width="200" height="200" src="./assets/images/crystals/crystal-2.jpg" alt="Crystal-2" class="img-thumbnail rounded mx-auto d-block border border-info">
+                    <img 
+                            width="200" 
+                            height="200" 
+                            src="./assets/images/crystals/crystal-2.jpg" 
+                            alt="Crystal-2" 
+                            rand-val=""
+                            class="img-thumbnail rounded mx-auto d-block border border-info crystal-image">
             </div>
             <div class="col-sm-offset-2 col-sm-3">
-                    <img width="200" height="200" src="./assets/images/crystals/crystal-3.jpg" alt="Crystal-3" class="img-thumbnail rounded mx-auto d-block border border-info">
+                    <img  
+                            width="200" 
+                            height="200" 
+                            src="./assets/images/crystals/crystal-3.jpg" 
+                            alt="Crystal-3" 
+                            rand-val=""
+                            class="img-thumbnail rounded mx-auto d-block border border-info crystal-image">
             </div>
             <div class="col-sm-offset-2 col-sm-3">
-                    <img width="200" height="200" src="./assets/images/crystals/crystal-4.jpg" alt="Crystal-4" class="img-thumbnail rounded mx-auto d-block border border-info">
+                    <img 
+                            width="200" 
+                            height="200" 
+                            src="./assets/images/crystals/crystal-4.jpg" 
+                            alt="Crystal-4" 
+                            rand-val=""
+                            class="img-thumbnail rounded mx-auto d-block border border-info crystal-image">
             </div>                                    
         </div>
     </div>
-    <script src='./assets/javascript/games.js'></script>
+    <script src='./assets/javascript/game.js'></script>
 </body>
 
 </html>
