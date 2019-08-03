@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Crystals Collector Game</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' href='./assets/css/reset.css'>
+
+
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <link rel='stylesheet' type='text/css' href='./assets/css/style.css'>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-light fixed-top bg-info">
+        <span class="navbar-brand mb-0 h1 mx-auto display-2 text-light">Crystals Collector Game!</span>
+    </nav>
+    <div class="container">
+        <div class="row m-4 p-4"></div>
+        <div class="row">
+            <div class="col-sm-offset-2 col-sm-12">
+                <div class="jumbotron jumbotron-fluid rounded border border-info p-2" id="gameRule">
+                    <p class="small text-muted">You will be given a random number at the start of the game.
+                        There are four crystals below. By clicking on a crystal you will add a specific amounts
+                        of points to your total score.</p>
+                    <p class="small text-muted">You win by matching your total score to random number, you lose
+                        the game if you total goes above the random number. The value of crystal hidden from you until
+                        you click on it.
+                        Each time the game starts, the game will change the value of each crystal.</p>
+                </div>
+            </div>
+        </div>
+        <div class="row m-2 p-2">
+            <div class="col-sm-offset-2 col-sm-4">
+                <div class="card rounded border border-info" id="randNumCard">
+                    <div class="card-body text-center font-weight-bold">
+                        <div class="card-body text-center font-weight-bold" id="rand-num-val">
+                            <h1>12</h1>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-offset-2 col-sm-4">
+                <div class="card rounded border border-info" id="winLosCard">
+                    <div class="card-body text-center font-weight-bold">
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item">Wins:</li>
+                            <li class="list-group-item">Losses:</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-offset-2 col-sm-4">
+                <div class="card rounded border border-info" id="scoreCard">
+                    <div class="card-body text-center font-weight-bold">
+                        <div class="card-body text-center font-weight-bold" id="player-score">
+                            <h1>15</h1>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br>
+        <br>
+        <br>
+        <div class="row m-2 p-2">
+
+
+            <div class="col-sm-offset-2 col-sm-3">
+                    <img width="200" height="200" src="./assets/images/crystals/crystal-1.jpg" alt="Crystal-1" class="img-thumbnail rounded mx-auto d-block border border-info">
+            </div>
+            <div class="col-sm-offset-2 col-sm-3">
+                    <img width="200" height="200" src="./assets/images/crystals/crystal-2.jpg" alt="Crystal-2" class="img-thumbnail rounded mx-auto d-block border border-info">
+            </div>
+            <div class="col-sm-offset-2 col-sm-3">
+                    <img width="200" height="200" src="./assets/images/crystals/crystal-3.jpg" alt="Crystal-3" class="img-thumbnail rounded mx-auto d-block border border-info">
+            </div>
+            <div class="col-sm-offset-2 col-sm-3">
+                    <img width="200" height="200" src="./assets/images/crystals/crystal-4.jpg" alt="Crystal-4" class="img-thumbnail rounded mx-auto d-block border border-info">
+            </div>                                    
+        </div>
+    </div>
+    <script src='./assets/javascript/games.js'></script>
+</body>
+
+</html>
+
