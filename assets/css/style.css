@@ -2,7 +2,7 @@ body {
     background :rgb(88,154,204) url("../images/crystal-image-2.jpg") no-repeat fixed center;
     font-family:  Helvetica, Arial,sans-serif; 
     text-align: center;
-    padding: 10% 0px;        
+    padding: 5% 0px;        
 }
 
 #randNumCard, #scoreCard, #winLosCard, #gameRule {
